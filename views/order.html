@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Place Order</h1>
+    <form action="/order" method="POST">
+      <label for="foodId">Food ID:</label>
+      <input type="text" id="foodId" name="foodId" required>
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" name="userId" required>
+      <label for="orderId">Order ID:</label>
+      <input type="text" id="orderId" name="orderId" required>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+      <label for="paymentMode">Payment Mode:</label>
+      <select id="paymentMode" name="paymentMode" required>
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+        <option value="upi">UPI</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
